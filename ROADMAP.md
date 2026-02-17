@@ -15,15 +15,23 @@
   - Neutral (4-6): pensive (wistful tone), content (positive tone), nostalgic (bittersweet tone),  tired(slightly negative tone)
   - Positive (7-10): energetic, prideful, playful, grateful
 - [ ] Mood transitions (cross-threshold randomization at 3→4 and 6→7)
-- [ ] Main personality groups (6 types)
+- [ ] Main personality groups (10 types)
   - Hermit (rational + introvert)
   - Professional (rational + extrovert)
   - Dreamer (idealistic + introvert)
   - Performer (idealistic + extrovert)
   - Recluse (pessimistic + introvert)
   - Cynic (pessimistic + extrovert)
-- [ ] Secondary traits (initially 6, expandable)
-  - Friendly, Witty, Greedy, Wise, Romantic, Brave
+  - Scrooge (Unpleasant, abrasive)
+  - Snake (Unpleasant, condescending)
+  - Princess (a spoiled noble, comedic)
+  - Mad Scientist (a crazy genius, comedic)
+- [ ] Secondary traits (initially 10, expandable)
+  - Bold, Anxious
+  - Lazy, Restless
+  - Impatient, Envious
+  - Witty, Ditzy
+  - Greedy, Nurturing
 - [ ] Quirks of speech (prefix/suffix, assigned at villager creation)
 - [ ] Memory tracking
   - First trade and frequency
@@ -31,17 +39,6 @@
   - Total interactions
   - Weather at first meeting
   - Global achievements
-
-### Content Population
-- [ ] ~10 base lines per mood
-- [ ] ~5 lines per mood + job combination
-- [ ] ~5 lines per mood + personality combination
-- [ ] Tonal markers (speech_quirks/tonalmarks.json)
-- [ ] Speech prefix/suffix quirks
-- [ ] Main personality dialogue (40% weight)
-- [ ] Job-specific dialogue (20% weight)
-- [ ] Secondary personality dialogue (10% each, two slots)
-- [ ] Event dialogue (10% weight)
 
 ### Skins Feature (Trivial, Include in v1)
 - [ ] Command to change villager skin via image link
