@@ -12,8 +12,8 @@
   - Suffix quirks (20% chance)
 - [ ] Mood system (0-10 scale with three groups)
   - Negative (0-3): unhappy, worried, irritable
-  - Neutral (4-6): pensive, content, nostalgic, tired
-  - Positive (7-10): energetic, prideful, playful, gratitude
+  - Neutral (4-6): pensive (wistful tone), content (positive tone), nostalgic (bittersweet tone),  tired(slightly negative tone)
+  - Positive (7-10): energetic, prideful, playful, grateful
 - [ ] Mood transitions (cross-threshold randomization at 3→4 and 6→7)
 - [ ] Main personality groups (6 types)
   - Hermit (rational + introvert)
@@ -76,7 +76,7 @@
   - Generate maps to other villages, ruins, End fortress
 
 ### Combat/Defense
-- [ ] Guard job
+- [ ] Guard job replaces nitwit
   - Fight mobs profession-appropriately
   - Put out fires
   - Attack villager-attackers
@@ -87,7 +87,8 @@
 
 ### Breeding System Overhaul
 - [ ] Remove vanilla villager breeding
-- [ ] Replace with migration system (beds >> population)
+- [ ] Replace with migration system where NPCs simply spawn in empty houses (beds >> population)
+    - Check for jobs not already in town, otherwise become guards
 - [ ] Simplify babies to single growth stage
 - [ ] Track parentage for special dialogue
 
@@ -121,17 +122,18 @@
 - [ ] Ender Dragon (female, one per world)
   - POI: Dragon egg
   - Teleport to End cities (bypass stronghold)
-- [ ] Wither
+- [ ] Wither (either gender, farming wither can allow multiple)
   - Degrade items to components
   - Sell nether materials
-- [ ] Elder Guardian
+- [ ] Elder Guardian (either gender, farming can allow multiple)
   - Grant buff reversing boss fight debuff
   - Water breathing
   - Sell ocean temple materials
-- [ ] Warden
+- [ ] Warden (either gender, farming can allow multiple)
   - Sell skulk items for experience
   - Wander at night, beat up noise-making mobs
-  - Experience thief (regenerates with exp)
+  - Add a drop when killing ordinary warden to make POI
+  - Experience used to regenerate health
 
 ---
 
@@ -186,7 +188,7 @@
 
 ### Affinity System
 - [ ] Affinity levels
-  - Neutral → Acquaintance → Good Friend → Lover (4 levels)
+  - Enemy → Disliked → Neutral → Acquaintance → Good Friend → Lover (6 levels, start neutral)
 - [ ] Level-gated dialogue
   - Different dialogue variants per affinity level
   - Subtle dialogue changes vs major gates
@@ -214,8 +216,8 @@
 - [ ] Baby generation
   - Inherit one parent's skin
   - Inherit main personality from one parent
-  - Inherit secondary personality from other parent
-- [ ] Marriage benefits (minimal, formal rather than mechanical)
+  - Inherit immutable secondary personality from other parent
+- [ ] Marriage benefits (minimal, formal rather than mechanical, mostly just dialogue, can't subordinate your baby or spouse and make them do chores like in MCA)
 
 ### Memory Expansion
 - [ ] Likes and dislikes (only after acquaintance, consistent after)
@@ -225,7 +227,7 @@
   - Most used item (rolling window)
   - Most placed/mined block (rolling window)
   - Most killed mob (rolling window)
-  - Most hoarded item in chests (rolling window of 50 interactions)
+  - Most hoarded item in chests (rolling window)
 
 ---
 
@@ -245,7 +247,10 @@
   - Gossip and business transactions
   - Mundane discussion (non-romantic, see implementation below)
   - Reputation spreading
-  - Produce relationship graph for village that player has declared residence in through claiming a bed in that area and reaching a certain threshold of influence, begin tracking villager relationships with one another
+  - Produce relationship graph for village that player has declared residence in through claiming a bed in that area and reaching a certain threshold of influence, begin tracking villager relationships with one another. 
+    - Personal interactions: Use a call and response method with the call being of a certain template modified by the personality of the one calling, and response being a template (determined by mood and relationship level) with the exact phrasing of the selected sentiment being personality dependent
+    - Professional interactions: a call and response method where the call is targeted at a given profession, for example asking a guard about the patrol, and the response is also generated from the profession list 
+  category, only phrased differently by personality
   - Possible emotes like in terraria 
   - Possible in-chat exchanges of 1-2 lines generated based on profession, relationship, personality, gossip, or weather 
 
@@ -264,18 +269,9 @@
 - [ ] Villager death reactions
 - [ ] Location/landmark awareness
 - [ ] Other villager awareness
-- [ ] Job-informed dialogue
-- [ ] Relationship-level splits
-  - Main personality: 10+ variants per level
-  - Job variations: 1-5 variants per level
-- [ ] Chat option for idle conversation
 - [ ] Personality-tagged dialogue options
-  - Allow player choice: chat/flirt/banter/joke (5th version feature)
-- [ ] Split dialogue into modular JSONs
-  - Per-personality files
-  - Per-job files
-  - Per-secondary-personality files
-  - Weighted random pulls with relationship modifiers
+  - Expand player choice: go beyond chat/flirt/banter/joke and offer specific lines
+
 
 ### Final Stretch
 - [ ] Comprehensive testing across all systems
