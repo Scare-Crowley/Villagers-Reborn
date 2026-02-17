@@ -1,6 +1,6 @@
 # **Villagers Reborn**
 
-This mod replaces vanilla villagers with human models while keeping their usual jobs, trades, and behavior. 
+This mod replaces vanilla villagers with human modeld and will update their usual jobs, trades, and behavior. 
 
 The mod adds villager names, personalities, and a dialogue system. It works in any existing world and is compatible with most mods that add custom trades or professions.
 
