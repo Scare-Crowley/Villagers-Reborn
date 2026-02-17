@@ -1,0 +1,43 @@
+Development Plan:
+
+We are totally revamping how dialogue works! 
+When I am done with this, I will have a dialogue system possibly the first of its kind!
+Every villager will spawn in with a main personality, an immutable secondary personality, and an
+additional second personality subject to change over time (low chance every 100 or so interactions,
+only tracked after raising your affection with them to a higher level). Their job only changes if
+you change their work station, but mood will fluctuate over time. Events will also fluctuate somewhat,
+but are typically very simple things like birthday (anything to do with memory of villagers like this
+is tracked globally in a dictionary-like object only for villagers with very high affinity), or things
+like the weather. Later on slightly more interesting uses for this include keeping a rolling buffer
+that tracks the ID of the last blocks placed/mined or enemies killed and potentially commenting on 
+whichever is the highest if it meets some flag (ie: you are getting a lot of flowers recently, are
+they for me by chance?)
+
+Dialogue will be structured like this. A line of dialogue will be constructed whenever an
+interaction event is being handled. there will be two methods toggleable by a config or by 
+memory consumption. A variable that simply updates on config toggle or a periodic memory check, an 
+enable switch that is an AND between the memory usage threshold and config seems good. 
+
+Assuming memory usage is within reasonable boundaries, we will do it this complex way:
+1. If a villager has a prefix quirk, roll a 20% chance for them to preface their statement with this
+--> Something like "Hey!" "Ohohohoho~" "Howdy!" "Hehe..." "Oh!"
+2. Next, randomly select main, job, secondary personality, mood, or event dialogue. Try to keep 
+---- these somewhat balanced. I think it is ideal to have something like 40/20/10/10/10/10 for
+---- main/job/secondary1/secondary2/mood/event. 
+3. Next, select if you will modify it with an additional personality trait
+---> if you do, randomly select between main, secondary1, secondary2, job (profession related
+---- idioms might work here), or mood. These modifications can go before or after the core idea,
+---- it will make no difference in practice. They are interjections that indicate tone, stored in 
+---- the tonalmarks json in speech_quirks and indexed by their corresponding trait.
+---- If you do not use this, just put the main idea as-is
+4. Finally, if they have a suffix quirk, 20% chance to end their statement with it. 
+----> something like "yknow?" "right?!" "figures.." etc... 
+
+Realistically string concatenation of this level should take very little time and memory but in the
+case where this somehow hampers performance, just grab a random core idea, ignore step 3 entirely. 
+
+
+Possible update in the long term:
+-Purposefully constructed madlib-like combinatoric dialogue like "EVENT," ",REACTION" tagged by mood,
+could allow for more influence from the secondary trait, possibly 
+

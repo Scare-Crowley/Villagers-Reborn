@@ -6,17 +6,17 @@
       "request": "launch",
       "name": "Client",
       "presentation": {
-        "group": "Mod Development - slimpatch-template-1.21.1",
+        "group": "Mod Development - Villagers-Reborn",
         "order": 0
       },
-      "projectName": "slimpatch-template-1.21.1",
+      "projectName": "Villagers-Reborn",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\clientRunProgramArgs.txt"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\bin\\main"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},
@@ -28,17 +28,17 @@
       "request": "launch",
       "name": "Data",
       "presentation": {
-        "group": "Mod Development - slimpatch-template-1.21.1",
+        "group": "Mod Development - Villagers-Reborn",
         "order": 1
       },
-      "projectName": "slimpatch-template-1.21.1",
+      "projectName": "Villagers-Reborn",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\dataRunProgramArgs.txt"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\dataRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\dataRunVmArgs.txt",
-        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\bin\\main"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},
@@ -50,17 +50,17 @@
       "request": "launch",
       "name": "GameTestServer",
       "presentation": {
-        "group": "Mod Development - slimpatch-template-1.21.1",
+        "group": "Mod Development - Villagers-Reborn",
         "order": 2
       },
-      "projectName": "slimpatch-template-1.21.1",
+      "projectName": "Villagers-Reborn",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\gameTestServerRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\gameTestServerRunVmArgs.txt",
-        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\bin\\main"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},
@@ -72,17 +72,17 @@
       "request": "launch",
       "name": "Server",
       "presentation": {
-        "group": "Mod Development - slimpatch-template-1.21.1",
+        "group": "Mod Development - Villagers-Reborn",
         "order": 3
       },
-      "projectName": "slimpatch-template-1.21.1",
+      "projectName": "Villagers-Reborn",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\serverRunProgramArgs.txt"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\build\\moddev\\serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\javic\\Documents\\1. Minecraft NECESARIO 2\\slimpatch-template-1.21.1\\bin\\main"
+        "@C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dslimpatch%%C:\\Users\\tmakwood\\Documents\\GitHub\\Villagers-Reborn\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},

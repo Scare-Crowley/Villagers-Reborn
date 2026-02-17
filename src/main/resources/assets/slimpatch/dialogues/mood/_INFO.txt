@@ -1,0 +1,28 @@
+Development Plan:
+
+Moods are sorted into three groups: positive, neutral, and negative. 
+Positive moods include: energetic, prideful, playful, gratitude
+Neutral moods include: pensive, content, nostalgic, tired
+Negative moods include: unhappy, worried, irritable
+
+Gratitude is used as dialogue to pull from when responding to gifts
+An NPC with gratitude mood might say "thanks for stopping by!" if a goodbye option is chosen to
+close the UI without escaping
+
+Have a simple integer between 0 and 10, goes up or down a stage based on successful or 
+unsuccessful interactions. When crossing the threshold 3 or 6, change mood to random mood 
+in the new mood group. 
+
+3->4 means roll for neutral mood
+6->7 means roll for positive mood
+
+0,1,2,3 = negative
+4,5,6 = neutral
+7,8,9,10 = positive
+
+Each mood will have its own base lines (let's try and go for about 10) plus 5 lines per job
+and about 5 lines per personality to start with. This is an exception to the ordinary rule that
+combinations of tables are done procedurally, but it is necessary because this is a good opportunity
+for a lot of punch from relatively small changes. This will be a good section to expand later since 
+it is exceptionally dynamic which suits the mod's philosophy. The goal of phase 1 is to create 
+believable "actors." 
