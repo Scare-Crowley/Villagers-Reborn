@@ -306,4 +306,3 @@
 - v3 is independently shippable (aesthetic enhancement)
 - v4 adds depth to existing systems (ship after v3)
 - v5 is ongoing refinement
-
